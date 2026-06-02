@@ -1,0 +1,9 @@
+n=int(input("enter the number").strip())
+max_digit=0
+min_digit=9
+while n>0:
+     digit=n%10
+     max_digit=max(max_digit,digit)
+     min_digit=min(min_digit,digit)
+     n//=10
+print(max_digit,min_digit)
